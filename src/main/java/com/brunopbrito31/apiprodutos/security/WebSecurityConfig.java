@@ -10,11 +10,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
+    
     protected void configure(HttpSecurity http) throws Exception{
         http.
             authorizeRequests()
                 .antMatchers("/contacts/**").permitAll() // Permite que todos os endpoints de contatos sejam liberados sem autenticação
                 .antMatchers("/users/**").permitAll() // Permite que todos os endpoints de users sejam liberados sem autenticação
+                .antMatchers("/api/usuario/**").permitAll()
+                .antMatchers("/api/usuario/salvar/**").permitAll()
                 .anyRequest() 
                 .authenticated() // Todas as outras, somente com autenticação
                 .and() // Permite adicionar uma regra 
