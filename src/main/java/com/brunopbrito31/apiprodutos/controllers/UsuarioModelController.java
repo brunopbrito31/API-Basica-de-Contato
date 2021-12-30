@@ -28,7 +28,7 @@ public class UsuarioModelController {
     private PasswordEncoder encoder;
 
 
-    @GetMapping("/listarTodos")
+    @GetMapping
     public ResponseEntity<List<UsuarioModel>> getlistarTodos(){
         return ResponseEntity.ok(usuarioModelRep.findAll());
     }
