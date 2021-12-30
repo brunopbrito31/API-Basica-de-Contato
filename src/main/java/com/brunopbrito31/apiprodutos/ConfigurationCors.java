@@ -1,15 +1,15 @@
 // package com.brunopbrito31.apiprodutos;
 
-// import java.io.IOException;
+// // import java.io.IOException;
 
-// import javax.servlet.Filter;
-// import javax.servlet.FilterChain;
-// import javax.servlet.FilterConfig;
-// import javax.servlet.ServletException;
-// import javax.servlet.ServletRequest;
-// import javax.servlet.ServletResponse;
-// import javax.servlet.http.HttpServletRequest;
-// import javax.servlet.http.HttpServletResponse;
+// // import javax.servlet.Filter;
+// // import javax.servlet.FilterChain;
+// // import javax.servlet.FilterConfig;
+// // import javax.servlet.ServletException;
+// // import javax.servlet.ServletRequest;
+// // import javax.servlet.ServletResponse;
+// // import javax.servlet.http.HttpServletRequest;
+// // import javax.servlet.http.HttpServletResponse;
 
 // import org.apache.catalina.filters.CorsFilter;
 // import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -29,13 +29,11 @@
 
 //     @Bean
 //     public FilterRegistrationBean corsFilter() {
-//         System.out.println("entrou no filtro do cors");
+//         System.out.println("entrou no filtro novox do cors");
 //         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 //         CorsConfiguration config = new CorsConfiguration().applyPermitDefaultValues();
 //         config.addAllowedMethod(HttpMethod.PUT);
 //         config.addAllowedMethod(HttpMethod.DELETE);
-//         config.addAllowedMethod(HttpMethod.POST);
-//         config.addAllowedMethod(HttpMethod.GET);
 //         source.registerCorsConfiguration("/**", config);
 //         FilterRegistrationBean bean = new FilterRegistrationBean(new CorsFilter());
 //         bean.setOrder(0);
